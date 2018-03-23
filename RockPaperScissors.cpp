@@ -78,8 +78,7 @@ void play() {
 
 int main() {
 	play();
-
-
+	
 	string y;
 	getline(cin, y);
 	return 0;
