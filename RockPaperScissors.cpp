@@ -4,7 +4,7 @@
 #include <cstdlib>
 using namespace std;
 
-int main() {
+void play() {
 	srand(time(NULL));
 
 	string userInput;
@@ -66,7 +66,19 @@ int main() {
 	}
 
 
-	cin.ignore(100, '\n');
+	char playAgain;
+	cout << "Play again? (y/n)" << endl;
+	cin >> playAgain;
+
+	if (playAgain == 'y' || playAgain == 'Y') {
+		play();
+	}
+}
+
+
+int main() {
+	play();
+
 
 	string y;
 	getline(cin, y);
